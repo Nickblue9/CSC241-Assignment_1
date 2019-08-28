@@ -1,7 +1,10 @@
-A
-X
-D
-C
-N
-Y
-R
+ABC
+AAA
+BBB
+CCC
+aaa
+abc
+bcd
+bbb
+ccc
+ddd

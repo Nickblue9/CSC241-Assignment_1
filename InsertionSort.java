@@ -35,28 +35,16 @@ public class InsertionSort {
         }
     }
 
-    private static String[] sort(String[] arr){
-        for (int j = 1; j < arr.length; j++) {
-            String key = arr[j];
+    public static String[] sort(String[] array) {
+        for (int j = 1; j < array.length; j++) {
+            String key = array[j];
             int i = j - 1;
-            while (i >= 0 && arr[i].charAt(0) > key.charAt(0)) {
-                arr[i + 1] = arr[i];
+            while (i >= 0 && array[i].compareTo(key)>0) {
+                array[i + 1] = array[i];
                 i--;
             }
-            arr[i + 1] = key;
+            array[i + 1] = key;
         }
-
-        int k = 0;
-        for (int j = 1; j < arr.length; j++) {
-            String key = arr[j];
-            int i = j - 1;
-            if(arr[i].charAt(0)==key.charAt(0))
-            while (i >= 0 && arr[i].charAt(1) > key.charAt(1)) {
-                arr[i + 1] = arr[i];
-                i--;
-            }
-            arr[i + 1] = key;
-        }
-        return arr;
+        return array;
     }
 }
